@@ -1,0 +1,277 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% dari atas dan 0 dari samping */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* 80% dari lebar kontainer */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Gaya untuk tombol back-button */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999; /* Mengatur lapisan agar tombol tetap di atas konten */
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #0258c2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 55%;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  color: #0b5aaf;
+  background-color: transparent;
+  border: 1.7px solid #0b5aaf;
+}
+
+/* Gaya untuk ikon tombol kembali */
+.back-button i {
+  font-size: 24px; /* Ukuran ikon */
+}
+
+/* Kontainer */
+.container {
+  max-width: 600px;
+  margin: 50px auto; /* Menengahkan kontainer */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontainer ikon */
+.icon-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icon-container i {
+  font-size: 50px; /* Ukuran ikon lebih besar */
+  color: #007bff; /* Warna ikon */
+}
+/* Judul */
+h1 {
+  text-align: center;
+  color: #007bff;
+  border-bottom: 4px solid #007bff;
+  padding-bottom: 10px;
+  font-size: 2em; /* Ukuran font yang lebih besar */
+  margin-bottom: 20px; /* Margin bawah yang lebih besar */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  letter-spacing: 2px; /* Spasi antar huruf */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan teks */
+}
+
+/* Gaya untuk label dan kotak centang */
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+label:hover {
+  background-color: #e9e9e9;
+  border-color: #ccc;
+}
+
+input[type="checkbox"] {
+  order: 1; /* Menempatkan checkbox setelah teks label */
+  margin-left: 10px; /* Jarak antara label dan checkbox */
+  margin-right: 5px; /* Jarak antara checkbox dan elemen lain jika diperlukan */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff; /* Warna border biru */
+  border-radius: 4px;
+  background-color: #fff; /* Latar belakang putih */
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #007bff; /* Latar belakang biru saat tercentang */
+  border-color: #007bff;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✔";
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Kontainer tombol */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Tombol */
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap saat hover */
+}
+
+/* Tombol Clear */
+.clearButton {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Warna merah */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clearButton:hover {
+  background-color: #b12230; /* Warna merah yang lebih gelap saat hover */
+}
+/* Kontainer tombol */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Tombol */
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap saat hover */
+}
+
+/* Tombol Clear */
+.clearButton {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Warna merah */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clearButton:hover {
+  background-color: #c82333; /* Warna merah yang lebih gelap saat hover */
+}
+/* Output diagnosis dan perawatan */
+#diagnosis {
+  margin-top: 30px;
+  font-weight: bold;
+  border-top: 2px solid #007bff;
+  padding-top: 20px;
+  color: #007bff;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+#diagnosis:hover {
+  background-color: #e9f7ff;
+}
+
+#percentage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 10px;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+#percentage:hover {
+  background-color: #e9f7ff;
+}
+
+#treatment {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 10px;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+#treatment:hover {
+  background-color: #e9f7ff;
+}

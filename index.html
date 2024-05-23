@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Dicoding Indonesia</title>
+    <link rel="stylesheet" href="aps.css" />
+    <script src="navbar.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="file.png" alt="Logo" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#Tentang">Tentang</a></li>
+          <li><a href="#carakerja">Cara Kerja</a></li>
+          <li><a href="#fitur">Fitur Utama</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content" id="Tentang">
+        <div class="content-description">
+          <h1 class="title">Sistem pakar Ginjal</h1>
+          <p>
+            Sistem Pakar Penyakit Ginjal adalah alat interaktif yang dirancang
+            untuk membantu Anda memahami gejala yang mungkin terkait dengan
+            penyakit ginjal. Dengan menggunakan teknologi kecerdasan buatan,
+            sistem ini dapat menganalisis gejala yang Anda pilih dan memberikan
+            estimasi diagnosis serta saran perawatan yang mungkin diperlukan.
+          </p>
+          <button onclick="window.location.href='kunyuk.html'">
+            Lebih lanjut
+          </button>
+        </div>
+        <div class="content-image">
+          <img src="suhu.webp" alt="PAKAR GINJAL" />
+        </div>
+      </section>
+
+      <section id="fitur" class="features">
+        <div class="container">
+          <h2>Fitur Utama</h2>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <i class="fas fa-stethoscope"></i>
+              <h3>Diagnosis Cepat</h3>
+              <p>Mendapatkan hasil diagnosis hanya dalam hitungan menit.</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-heartbeat"></i>
+              <h3>Akurat</h3>
+              <p>Didukung oleh data medis yang terpercaya dan terbaru.</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-user-md"></i>
+              <h3>Penanganan Lanjut</h3>
+              <p>Menyediakan informasi lanjutan untuk penanganan yang tepat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carakerja" class="carakerja">
+        <div class="container">
+          <h2>Cara Kerja</h2>
+          <div class="steps">
+            <div class="step">
+              <i class="fas fa-edit"></i>
+              <h3>Langkah 1</h3>
+              <p>Masukkan gejala yang Anda alami ke dalam sistem.</p>
+            </div>
+            <div class="step">
+              <i class="fas fa-search"></i>
+              <h3>Langkah 2</h3>
+              <p>Sistem akan menganalisis data gejala yang Anda masukkan.</p>
+            </div>
+            <div class="step">
+              <i class="fas fa-clipboard-check"></i>
+              <h3>Langkah 3</h3>
+              <p>
+                Anda akan menerima hasil diagnosis dan rekomendasi penanganan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Hubungi Kami</h2>
+          <p>
+            Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk
+            menghubungi kami.
+          </p>
+          <form action="submit.php" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Aryo TP</p>
+      <div class="footer-links">
+        <a href="#">Tentang Kami</a>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat dan Ketentuan</a>
+      </div>
+    </footer>
+  </body>
+</html>

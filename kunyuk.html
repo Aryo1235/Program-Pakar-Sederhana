@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pakar Penyakit Ginjal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="persentase.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="back-button">
+        <a href="index.html" class="button"
+          ><i class="fas fa-arrow-left"></i>
+        </a>
+      </div>
+      <div class="icon-container">
+        <i class="fas fa-notes-medical"></i>
+      </div>
+      <h1>Sistem Pakar Penyakit Ginjal</h1>
+      <p>Masukkan gejala yang dialami:</p>
+      <div class="checkboxes">
+        <label for="symptom1"
+          >Tekanan Darah Tinggi<input
+            type="checkbox"
+            id="symptom1"
+            value="tekanan darah tinggi"
+        /></label>
+        <label for="symptom2"
+          >Urin Berdarah<input
+            type="checkbox"
+            id="symptom2"
+            value="urin berdarah"
+        /></label>
+        <label for="symptom3"
+          >Pembengkakan pada Kaki<input
+            type="checkbox"
+            id="symptom3"
+            value="pembengkakan pada kaki"
+        /></label>
+        <label for="symptom4"
+          >Kelelahan Berlebihan<input
+            type="checkbox"
+            id="symptom4"
+            value="kelelahan berlebihan"
+        /></label>
+        <!-- Tambahkan checkbox sesuai dengan pengetahuan baru -->
+        <label for="symptom5"
+          >Nyeri Pinggang<input
+            type="checkbox"
+            id="symptom5"
+            value="nyeri pinggang"
+        /></label>
+        <label for="symptom6"
+          >Kehilangan Nafsu Makan<input
+            type="checkbox"
+            id="symptom6"
+            value="kehilangan nafsu makan"
+        /></label>
+        <label for="symptom7"
+          >Mual<input type="checkbox" id="symptom7" value="mual"
+        /></label>
+        <label for="symptom8"
+          >Berat Badan Turun Drastis<input
+            type="checkbox"
+            id="symptom8"
+            value="berat badan turun drastis"
+        /></label>
+        <label for="symptom9"
+          >Nyeri pada Perut<input
+            type="checkbox"
+            id="symptom9"
+            value="nyeri pada perut"
+        /></label>
+        <label for="symptom10"
+          >Perubahan Warna Kulit<input
+            type="checkbox"
+            id="symptom10"
+            value="perubahan warna kulit"
+        /></label>
+        <label for="symptom11"
+          >Sakit Kepala<input
+            type="checkbox"
+            id="symptom11"
+            value="sakit kepala"
+        /></label>
+        <label for="symptom12"
+          >Keluhan Penglihatan<input
+            type="checkbox"
+            id="symptom12"
+            value="keluhan penglihatan"
+        /></label>
+        <!-- Tambahkan checkbox untuk gejala baru di sini -->
+        <label for="symptom13"
+          >Peningkatan Frekuensi Buang Air Kecil<input
+            type="checkbox"
+            id="symptom13"
+            value="peningkatan frekuensi buang air kecil"
+        /></label>
+        <label for="symptom14"
+          >Sering Merasa Haus<input
+            type="checkbox"
+            id="symptom14"
+            value="sering merasa haus"
+        /></label>
+        <label for="symptom15"
+          >Demam<input type="checkbox" id="symptom15" value="demam"
+        /></label>
+        <label for="symptom16"
+          >Demam Tinggi yang Tidak Mereda<input
+            type="checkbox"
+            id="symptom16"
+            value="demam tinggi yang tidak mereda"
+        /></label>
+        <label for="symptom17"
+          >Denyut Nadi Cepat<input
+            type="checkbox"
+            id="symptom17"
+            value="denyut nadi cepat"
+        /></label>
+        <label for="symptom18"
+          >Bengkak di Sekitar Mata<input
+            type="checkbox"
+            id="symptom18"
+            value="bengkak di sekitar mata"
+        /></label>
+        <label for="symptom19"
+          >Pembengkakan pada Kaki<input
+            type="checkbox"
+            id="symptom19"
+            value="pembengkakan pada kaki"
+        /></label>
+      </div>
+      <div class="button-container">
+        <button onclick="getDiagnosis()" class="button">
+          Dapatkan Diagnosis
+        </button>
+        <button onclick="clearSelection()" class="clearButton">Clear</button>
+      </div>
+
+      <p id="diagnosis"></p>
+      <p id="percentage"></p>
+      <!-- Tambahkan elemen untuk menampilkan persentase -->
+      <p id="treatment"></p>
+    </div>
+  </body>
+</html>
